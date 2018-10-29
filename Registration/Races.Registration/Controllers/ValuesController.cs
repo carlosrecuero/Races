@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Races.Registration.Controllers
+namespace Races.Registrations.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

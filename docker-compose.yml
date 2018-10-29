@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  races.registration:
+    image: races.registration
+    build:
+      context: .
+      dockerfile: Registration/Races.Registration/Dockerfile
+  mssqlserver:
+    image: "microsoft/mssql-server-linux"
