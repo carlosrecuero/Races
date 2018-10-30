@@ -6,5 +6,10 @@ services:
     build:
       context: .
       dockerfile: Registration/Races.Registration/Dockerfile
+  races.management:
+    image: races.management
+    build:
+      context: .
+      dockerfile: Registration/Races.Management/Dockerfile
   mssqlserver:
     image: "microsoft/mssql-server-linux"

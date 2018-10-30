@@ -6,7 +6,19 @@ services:
       - ASPNETCORE_ENVIRONMENT: Development
       - CONNECTIONSTRINGS__DEFAULTCONNECTION: "Server=tcp:localhost,6106;User ID=sa;Password=Your_password123;MultipleActiveResultSets=False;"
     ports:
-      - "80"
+      - "5001:80"
+  races.management:
+    environment:
+      - ASPNETCORE_ENVIRONMENT: Development
+      - CONNECTIONSTRINGS__DEFAULTCONNECTION: "Server=tcp:localhost,6106;User ID=sa;Password=Your_password123;MultipleActiveResultSets=False;"
+    ports:
+      - "5002:80"
+  races.result:
+    environment:
+      - ASPNETCORE_ENVIRONMENT: Development
+      - CONNECTIONSTRINGS__DEFAULTCONNECTION: "Server=tcp:localhost,6106;User ID=sa;Password=Your_password123;MultipleActiveResultSets=False;"
+    ports:
+      - "5003:80"
   mssqlserver:
     environment:
       SA_PASSWORD: "Your_password123"
